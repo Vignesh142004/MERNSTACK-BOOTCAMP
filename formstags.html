@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tags</title>
+    <script>
+        function change(val)
+        {
+            document.getElementById("ranges").value=val;
+        }
+    </script>
+    <style>
+        legend
+        {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                Personal Information
+            </legend>
+            </br>
+            <label for="fname ">FIRST NAME :</label>
+            <input type="text" id="fname">
+            </br>
+            <br/>
+            <label for="email">Email:  </label>
+            <input type="email" id="email">
+            </br>
+            <br/>
+            <label for="uname" >USERNAME :</label>
+            <input type="text" id="uname">
+            </br>
+            <br/>
+            <label for="color">Favorite color :</label>
+            <select id="color">
+                <optgroup label="bright colors">
+                <option>Red</option>
+                <option>Blue</option>
+                </optgroup>
+                <optgroup label="Light colors">
+                <option>Green</option>
+                <option>Yellow</option>
+                <option>Black</option>
+                </optgroup>
+            </select>
+            <br/>
+            <br/>
+            <BR/>
+            <label for="cmd">COMMANDS :</label>
+            <textarea  rows="3" cols="28">Enter your valuable Feedback</textarea>
+            <br/>
+            <br/>
+            <label> Choose the browser from the list: </label>
+            <input list="browsers" id="browser">
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="MS EDGE"></option>
+                <option value="FireFox"></option>
+                <option value="Brave"></option>
+                <option value="Safari"></option>
+            </datalist>
+            <br/>
+            <br/>
+            <label>Range :</label>
+            <input type="range" id="ran" oninput="change(value)">
+            <output id="ranges">50</output>
+            <br/>
+            <br/>
+            <label>Choose a car :</label><br/><br/>
+            <input type="radio" id="radio">
+            <lable> AUDI</lable><br/>
+            <input type="radio" id="radio">
+            <lable> BMW</lable><br/>
+            <input type="radio" id="radio">
+            <lable> BENZ</lable><br/>
+            <input type="radio" id="radio">
+            <lable> ROLLS ROYALS</lable><br/>
+            
+     </fieldset>
+      <br/>
+     <input type="submit" class="submit"><br/><br/>
+     <input type="reset" class="reset">
+   </form>
+</body>
+</html>
