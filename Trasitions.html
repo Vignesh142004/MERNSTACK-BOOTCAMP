@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .heart {
+    width: 100px;
+    height: 100px;
+    fill: red; 
+    background-color: white; 
+    animation: scaleAnimation 3s infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.5); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <center style="padding-top: 100px;">
+        <svg class="heart" width="400" height="285" viewBox="0 0 400 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Frame 1">
+            <rect width="400" height="285" fill="white"/>
+            <ellipse id="Ellipse 1" cx="112.5" cy="117.5" rx="46.5" ry="40.5" fill="#FE1212"/>
+            <ellipse id="Ellipse 2" cx="169.5" cy="117.5" rx="43.5" ry="40.5" fill="#FF0505"/>
+            <path id="Polygon 1" d="M139.5 263L82.7753 149H196.225L139.5 263Z" fill="#FF0808"/>
+            </g>
+            </svg>
+            
+    </center>
+</body>
+</html>
