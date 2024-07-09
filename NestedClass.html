@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestedClass </title>
+    <style>
+        div[class^="myclass"]/*startswith*/
+        {
+            background-color: bisque;
+        }
+        div[class$="class2"]/*endwith*/
+        {
+            background-color: aqua;
+        }
+        div[class$="class3"]
+        {
+            background-color: aquamarine;
+        }
+        div[class*="class3"]/*contains*/
+        {
+           background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="myclass class1">CLASS 1</div>
+    <div class="myclass class2">CLASS 2</div>
+    <div class="myclass class3">CLASS 3</div>
+    
+</body>
+</html>

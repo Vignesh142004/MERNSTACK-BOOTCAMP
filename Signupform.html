@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tags</title>
+    <script>
+        function change(val)
+        {
+            document.getElementById("ranges").value=val;
+        }
+    </script>
+    <style>
+        fieldset
+        {
+            border-style: solid;
+            border-width:8px;
+            border-color: black;
+            border-radius: 50px 5px 35px 5px;
+        }
+        legend
+        {
+            color:rgb(255, 0, 0);
+            
+        }
+        *
+        {
+            background-color: antiquewhite;
+        }
+        #id1
+        {
+            
+            margin-right: 60px;
+        }
+        #id2
+        {
+            margin-right: 108px;
+        }
+        #id3
+        {
+            margin-right: 65px;
+        }
+        #id4
+        {
+             margin-right:25px;
+        }
+        #id5
+        {
+            margin-right: 60px;
+        }
+        #id6
+        {
+            margin-right: 30px;
+        }
+        #id7
+        {
+            margin-right: 100px;
+        }
+        #radio
+        {
+           margin-left:160px;
+        }
+        #b1
+        {
+            margin-left:150px;
+            margin-top: 10px;
+            color:black;
+            background-color: white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset width="40%">
+            <legend>
+                Personal Information
+            </legend>
+            </br>
+            <label for="fname" id="id1">FIRST NAME :</label>
+            <input type="text" id="fname">
+            </br>
+            <br/>
+            <label for="email" id="id2">EMAIL:  </label>
+            <input type="email" id="email">
+            </br>
+            <br/>
+            <label for="uname" id="id3">USERNAME :</label>
+            <input type="text" id="uname">
+            </br>
+            <br/>
+            <label for="color" id="id4">FAVARITE COLOR :</label>
+            <select id="color">
+                <optgroup label="bright colors">
+                <option>Red</option>
+                <option>Blue</option>
+                </optgroup>
+                <optgroup label="Light colors">
+                <option>Green</option>
+                <option>Yellow</option>
+                <option>Black</option>
+                </optgroup>
+            </select>
+            <br/>
+            <br/>
+            <BR/>
+            <label for="cmd" id="id5">COMMANDS :</label>
+            <textarea  rows="3" cols="28" placeholder="Enter your valuable Feedback"></textarea>
+            <br/>
+            <br/>
+            <label for="brower" id="id6"> Choose the browser: </label>
+            <input list="browsers" id="browser">
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="MS EDGE"></option>
+                <option value="FireFox"></option>
+                <option value="Brave"></option>
+                <option value="Safari"></option>
+            </datalist>
+            <br/>
+            <br/>
+            <label for="range" id="id7">RANGE :</label>
+            <input type="range" id="ran" oninput="change(value)">
+            <output id="ranges">50</output>
+            <br/>
+            <br/>
+            <label>CHOOSE THE CAR :</label><br/><br/>
+            <input type="radio" id="radio">
+            <lable> AUDI</lable><br/>
+            <input type="radio" id="radio">
+            <lable> BMW</lable><br/>
+            <input type="radio" id="radio">
+            <lable> BENZ</lable><br/>
+            <input type="radio" id="radio">
+            <lable> ROLLS ROYALS</lable><br/>
+            
+     </fieldset>
+      <br/>
+     <input type="submit" class="submit" id="b1">
+     <input type="reset" class="reset" id="b1">
+   </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+    <style>
+        a:hover
+        {
+            color:brown;
+        }
+        a:active
+        {
+            color:aquamarine;
+        }
+        a:visited
+        {
+            color:azure;
+        }
+        input:focus
+        {
+            background-color: lightsalmon;
+        }
+        ul li:nth-child(odd)
+        {
+            background-color: gold;
+        }
+        p::after
+        { 
+            content: " The contents are added within the CSS Elemental properrty.";
+        }
+        p::before
+        {
+            content: "CODER ";
+        }
+        ::selection
+        {
+           background-color:cyan;
+        }
+        p::selection
+        {
+          background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <a href="svg.html">WWW.chatgpt.com</a>
+    <p>SIVA !!!! </p>
+    <input type="text">
+    <ul>
+        <li>Class Selctor</li>
+        <li>ID Selector</li>
+        <li>Pseudo Selector</li>
+        <li>Universal Selector</li>
+        <li>Attribute Selector</li>
+        <li>Group Selector</li>
+    </ul>
+
+    
+</body>
+</html>
