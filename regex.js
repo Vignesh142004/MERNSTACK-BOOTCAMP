@@ -1,4 +1,3 @@
-
 function checkPasswordStrength(password){
     if(password.length<6)
     {
